@@ -36,10 +36,8 @@ NUM_ITERATIONS = 200
 def get_render_scale(model_name):
     """Determine render scale based on model name."""
     model_name_lower = model_name.lower()
-    if model_name_lower in ["playroom", "drjohnson"]:
+    if model_name_lower in ["playroom", "drjohnson", "truck", "train"]:
         return 1.0  # Full resolution
-    elif model_name_lower in ["truck", "train"]:
-        return 0.5  # Half resolution
     else:
         return 0.25  # Quarter resolution
 
